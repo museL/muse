@@ -75,14 +75,14 @@ module.exports = {
     // 底部 footer 的相关设置 
     footer: {
       // gitbutton  配置
-      gitbtn: {
-        // 仓库地址
-        repository: "https://ghbtns.com/github-btn.html?user=youdeliang&repo=vuepress-theme-top&type=star&count=true",
-        frameborder: 0,
-        scrolling: 0,
-        width: "80px",
-        height: "20px"
-      },
+      // gitbtn: {
+      //   // 仓库地址
+      //   repository: "https://ghbtns.com/github-btn.html?user=youdeliang&repo=vuepress-theme-top&type=star&count=true",
+      //   frameborder: 0,
+      //   scrolling: 0,
+      //   width: "80px",
+      //   height: "20px"
+      // },
       
       // 添加自定义 footer
       custom: `Copyright &copy; Top Blog 2020 <br /> 
