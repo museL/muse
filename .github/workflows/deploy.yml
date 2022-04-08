@@ -5,15 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
+      uses: museL/vuepress-deploy@main
       env:
         ACCESS_TOKEN: ${{ secrets._TOKEN }} // github Token
         TARGET_REPO: museL/muse.github.io.git // 仓库
 
-        TARGET_BRANCH: main   // build 之后推到的分支名
+        TARGET_BRANCH: deploy   // build 之后推到的分支名
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: src/.vuepress/dist/     //build 之后的目录
         CNAME: www.museL.cn
