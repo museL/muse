@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@master
 
     - name: vuepress-deploy
-      uses: museL/vuepress-deploy@main
+      uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets._TOKEN }} // github Token
-        TARGET_REPO: museL/muse.github.io.git // 仓库
+        TARGET_REPO: museL/muse.github.io // 仓库
 
         TARGET_BRANCH: deploy   // build 之后推到的分支名
         BUILD_SCRIPT: yarn && yarn build
