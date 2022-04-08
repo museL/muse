@@ -1,7 +1,7 @@
 module.exports = {
     // 网站 Title
       title: 'muse 的博客 ｜ muse Blog',
-      
+      base: '/muse/',
       // 网站描述
       description: '个人博客',
       
@@ -25,10 +25,10 @@ module.exports = {
       name: 'muse',
       
       // 头像 public文件夹下
-      avatar: '/avatar-top.jpeg',
+      avatar: '/muse/avatar-top.jpeg',
       
       // 头部背景图
-      headerBackgroundImg: '/avatar-bg.jpeg',
+      headerBackgroundImg: '/muse/avatar-bg.jpeg',
       
       // 个人简介 (支持 HTML)
       description: 'In me the tiger sniffs the rose<br/>心有猛虎，细嗅蔷薇',
@@ -51,25 +51,25 @@ module.exports = {
       home: {
         title: 'muse Blog', 
         subtitle: '好好生活，慢慢相遇', 
-        headerImage: '/home-bg.jpeg'
+        headerImage: '/muse/home-bg.jpeg'
       },
       
       // tag页面头部标题背景图设置，图片直接放在 public 文件夹下
       tags: {
         title: 'Tags', 
         subtitle: '遇见你花光了我所有的运气', 
-        headerImage: '/tags-bg.jpg'
+        headerImage: '/muse/tags-bg.jpg'
       },
       
       // 文章详情头部背景图
-      postHeaderImg: '/post-bg.jpeg',
+      postHeaderImg: '/muse/post-bg.jpeg',
     },
     
     // 社交平台帐号信息 
     sns: {
       github: { 
         account: 'github',
-        link: 'https://github.com/youdeliang'
+        link: 'https://github.com/museL'
       }
     },
     // 底部 footer 的相关设置 
@@ -87,7 +87,7 @@ module.exports = {
       // 添加自定义 footer
       custom: `Copyright &copy; Top Blog 2020 <br /> 
         Theme By <a href="https://www.vuepress.cn/" target="_blank">VuePress</a>
-        | <a href="https://www.github.com/youdeliang/" target="_blank">youdeliang</a>`
+        | <a href="https://github.com/museL" target="_blank">youdeliang</a>`
     },
     
     // 分页配置
@@ -97,12 +97,6 @@ module.exports = {
     },
     
     // vssue 评论配置, 如果不需要，可以设置 comments: false
-    comments: {    
-      owner: 'youdeliang',
-      repo: 'vuepress-theme-melodydl',
-      clientId: 'dfba8ecad544784fec1f',
-      clientSecret: '1358ac11bc8face24f598601991083e27372988d',
-      autoCreateIssue: false,
-    },
+    comments: false
   }
 }
